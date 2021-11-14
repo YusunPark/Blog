@@ -1,20 +1,30 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
 
-  let posts = {color : 'blue', fontSize: '30px' }
-  function 함수(){
-    return 100
-  }
+  let [title, setTitle] = useState(['남자 코트 추천', '여자 코트 추천', '숙제']); 
 
   return (
     <div className="App">
       <div className="black-nav">
-        <div className={ posts } style={ posts }>개발 Blog</div>
+        <div>개발 Blog</div>
       </div>
-      <img src={ logo } />
-      <h4> { posts + 함수() } </h4>
+      <div className='list'>
+        <h3>{ title[0] }</h3>
+        <p>2021-11-14</p>
+        <hr/>
+      </div>      
+      <div className='list'>
+        <h3>{ title[1] }</h3>
+        <p>2021-11-14</p>
+        <hr/>
+      </div>
+      <div className='list'>
+        <h3>{ title[2] }</h3>
+        <p>2021-11-14</p>
+        <hr/>
+      </div>
     </div>
   );
 }
