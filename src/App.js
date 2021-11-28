@@ -9,12 +9,12 @@ function App() {
   ]);
   let [count, setCount] = useState(0);
 
-  function changeTitle() {
-    // 새로운 복사본을 생성 : deep copy
-    var newArry = [...title];
-    newArry.sort();
-    setTitle( newArry );
-  }
+  // function changeTitle() {
+  //   // 새로운 복사본을 생성 : deep copy
+  //   var newArry = [...title];
+  //   newArry.sort();
+  //   setTitle( newArry );
+  // }
 
 
 
@@ -23,7 +23,6 @@ function App() {
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
-      <button onClick={ changeTitle }>버튼</button>
       <div className="list">
         <h3>
           {title[0]}{" "}
@@ -49,8 +48,21 @@ function App() {
         <p>2021-11-14</p>
         <hr />
       </div>
+
+      <Modal />
+      
     </div>
   );
+}
+
+function Modal() {
+  return(
+  <div className="modal">
+          <h2>제목</h2>
+          <p>날짜</p>
+          <p>상세내용</p>
+        </div>
+  )
 }
 
 export default App;
