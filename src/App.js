@@ -12,7 +12,7 @@ function App() {
   function changeTitle() {
     // 새로운 복사본을 생성 : deep copy
     var newArry = [...title];
-    newArry[0] = '남자 가디건 추천';
+    newArry.sort();
     setTitle( newArry );
   }
 
