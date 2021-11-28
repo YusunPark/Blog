@@ -20,8 +20,18 @@ function App() {
 
   return (
     <div className="App">
-      <div className="black-nav">
-        <div>개발 Blog</div>
+      <div className="header">
+        <div className="logo">
+          <img className="logo_img" src="https://img.cgv.co.kr/R2014/images/title/h1_cgv.png" width="100%" height="100%" alt="cgv logo"></img>
+        </div>
+        <div className="content">
+          <span>영화</span>
+          <span>예매</span>
+          <span>극장</span>
+        </div>
+      </div>
+      <div className="ad_poster">
+        <img src="https://img.cgv.co.kr/Front/Main/2021/1111/16365958530740.jpg" alt="호빗 3부작" width="100%"/>
       </div>
       <div className="list">
         <h3>

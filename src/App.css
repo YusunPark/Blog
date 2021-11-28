@@ -11,15 +11,36 @@ body {
   padding: 20px;
   background-color: #eee;
 }
+.ad_poster {
+  background-image: url("https://img.cgv.co.kr/R2014/images/common/bg/bg_c_bricks.png");
+  /* height: 100px; */
+  padding-left: 100px;
+  padding-right: 100px;
+  height: auto;
+}
 
-.black-nav {
-  background-color: black;
+.logo_img {
+  width: auto;
+}
+
+.content {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.header {
+  background-image: url("https://img.cgv.co.kr/R2014/images/common/bg/bg_header.gif");
   width: 100%;
   display: flex;
-  color: white;
-  padding: 20px;
-  font-weight: 600;
-  font-size: 20px;
+
+  color: #E71A0F;
+  font-weight: bold;
+  font-size: 55px;
 }
 
 .list {
