@@ -9,16 +9,21 @@ function App() {
   ]);
   let [count, setCount] = useState(0);
 
+  function changeTitle() {
+    // 새로운 복사본을 생성 : deep copy
+    var newArry = [...title];
+    newArry[0] = '남자 가디건 추천';
+    setTitle( newArry );
+  }
+
+
+
   return (
     <div className="App">
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
-      <button onClick={( { target : { title} }) => { setTitle([
-    "남자 가디건 추천",
-    "여자 코트 추천",
-    "숙제",
-  ]) }}>버튼</button>
+      <button onClick={ changeTitle }>버튼</button>
       <div className="list">
         <h3>
           {title[0]}{" "}
